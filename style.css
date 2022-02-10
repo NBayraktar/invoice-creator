@@ -1,0 +1,134 @@
+:root {
+  --black: #1c1c1c;
+  --blue: #0c4a6e;
+  --blueish: #1f2937;
+  --green: #065f46;
+  --grey: #d1d5db;
+  --white: #e5e7eb;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-weight: normal;
+  letter-spacing: 0.08rem;
+  margin-top: 0.5rem;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  width: 40%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--blueish);
+}
+
+.main-sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  padding: 3rem 0;
+}
+
+.sub-sect {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  height: 60vh;
+  margin: 12rem auto;
+}
+.btn-serv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 3rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  color: var(--blueish);
+  background-color: var(--grey);
+}
+
+.btn:hover {
+  background-color: var(--green);
+  color: var(--white);
+  transition: 0.5s;
+}
+
+.content-wrap,
+.note-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-wrap {
+  margin-top: 7rem;
+}
+
+.pound {
+  font-weight: normal;
+  color: #7f8286;
+}
+
+.note-wraper {
+  margin-bottom: 7rem;
+}
+
+.del-btn {
+  float: right;
+  margin-top: 0.4rem;
+  margin-left: 1.5rem;
+  background-color: var(--blueish);
+  color: var(--white);
+  border: none;
+  outline: none;
+  font-variant: small-caps;
+}
+
+.del-btn:hover {
+  cursor: pointer;
+  color: #b62727;
+  transition: 0.5s;
+}
+
+.send-invoice {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.7rem 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.send-invoice:hover {
+  background-color: var(--grey);
+  color: var(--blueish);
+  cursor: pointer;
+  transition: 0.5s;
+}
