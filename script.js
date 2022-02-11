@@ -1,20 +1,23 @@
 const prices = [];
+const btnWash = document.getElementById('btn-wash');
+const btnMow = document.getElementById('btn-mow');
+const btnPull = document.getElementById('btn-pull');
 
 
+btnWash.addEventListener('click', function () {
+  addPrice(10);
+})
+
+btnMow.addEventListener('click', function () {
+  addPrice(20);
+})
+
+btnPull.addEventListener('click', function () {
+  addPrice(30);
+})
 
 
-
-
-
-function totalAmount() {
-  let sum = 0;
-  for (i = 0; i < servicePrice.length; i++) {
-
-    sum += servicePrice[i];
-
-
-
-  }
-  console.log(sum);
+function addPrice(amount) {
+  prices.push(amount);
+  console.log(prices);
 }
-totalAmount()
