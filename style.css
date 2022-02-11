@@ -107,6 +107,10 @@ hr {
   font-variant: small-caps;
 }
 
+.total {
+  text-align: center;
+}
+
 .del-btn:hover {
   cursor: pointer;
   color: #b62727;
