@@ -15,46 +15,52 @@
         <h1>Invoice creator</h1>
         <h4>Thanks for choosing GoodCorp, LLC!</h4>
       </main>
+
       <section class="sub-sect">
         <div class="btn-serv">
-          <button id="btn-wash" class="btn">Wash Car: £10</button>
-          <button id="btn-mow" class="btn">Mow Lawn: £20</button>
-          <button id="btn-pull" class="btn">Pull Weeds: £30</button>
+          <button id="btn-wash" class="btn" value="wash">Wash Car: £10</button>
+          <button id="btn-mow" class="btn" value="mow">Mow Lawn: £20</button>
+          <button id="btn-pull" class="btn" value="pull">
+            Pull Weeds: £30
+          </button>
         </div>
 
         <div class="content-wrap">
           <div class="cont-box">
             <p>TASK</p>
             <h2>
-              Wash Car<span><button class="del-btn">remove</button></span>
+              Wash Car <span id="span">0</span
+              ><button class="del-btn">remove</button>
             </h2>
             <h2>
-              Mow Lawn<span><button class="del-btn">remove</button></span>
+              Mow Lawn <span id="span">0</span
+              ><button class="del-btn">remove</button>
             </h2>
             <h2>
-              Pull Weeds<span><button class="del-btn">remove</button></span>
+              Pull Weeds <span id="span">0</span
+              ><button class="del-btn">remove</button>
             </h2>
           </div>
 
           <div class="prise-box">
             <p>TOTAL</p>
-            <h2 id="wash-car-p"><span class="pound">£</span></h2>
-            <h2 id="mow-lawn-p"><span class="pound">£</span></h2>
-            <h2 id="pull-weeds-p"><span class="pound">£</span></h2>
+            <h2 id="wash-car-p" class="serv-price">0</h2>
+            <h2 id="mow-lawn-p" class="serv-price">0</h2>
+            <h2 id="pull-weeds-p" class="serv-price">0</h2>
           </div>
         </div>
         <hr />
         <div class="note-wraper">
           <div class="notes">
             <p>NOTES</p>
-            <p>We accept cash, credit card, or PayPal</p>
+            <p class="par">We accept cash, credit card, or PayPal</p>
           </div>
           <div class="total">
             <p>TOTAL AMOUNT</p>
-            <h1 id="total-amount"><span class="pound">£</span></h1>
+            <h1 id="total-amount">0</h1>
           </div>
         </div>
-
+        <!-- <span class="pound">£</span> -->
         <button id="send" class="send-invoice">SEND INVOICE</button>
       </section>
     </div>
